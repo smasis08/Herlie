@@ -47,6 +47,7 @@ a {
 .logo {
   font-weight: 700;
   font-size: 1.4rem;
+  color: var(--muted);
 }
 
 .nav a {
@@ -63,9 +64,10 @@ a {
 }
 
 .hero {
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-  padding: 80px 0 100px;
-  overflow: hidden;
+  position: relative;
+  min-height: 90vh;
+  background: url("fondo.png") center/cover no-repeat;
+  color: #fff;
 }
 
 .hero-content {
@@ -80,7 +82,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.75rem;
-  color: var(--primary);
+  color: var(--bg);
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -92,7 +94,7 @@ a {
 }
 
 .lead {
-  color: var(--muted);
+  color: var(--bg);
   max-width: 520px;
   margin-bottom: 32px;
 }
@@ -119,8 +121,8 @@ a {
 }
 
 .secondary {
-  border: 1px solid var(--primary-active);
-  color: var(--primary);
+  border: 1px solid var(--bg);
+  color: var(--bg);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
