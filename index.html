@@ -52,22 +52,48 @@
           </div>
         </div>
       </div>
-      <div class="hero-card">
-        <h3>Marcaje seguro en segundos</h3>
-        <ul>
-          <li>Autenticación y permisos por rol.</li>
-          <li>Reportes de entradas y salidas en tiempo real.</li>
-          <li>Alertas cuando alguien sale de la geocerca.</li>
-          <li>Historial completo por colaborador.</li>
-        </ul>
-        <div class="card-footer">
-          <span>Disponible para iOS y Android</span>
+      <div class="hero-carousel" aria-label="Carrusel de beneficios de Herlie">
+        <div class="carousel-track">
+          <article class="carousel-slide is-active">
+            <span class="slide-tag">Automatiza</span>
+            <h3>Marcaje seguro en segundos</h3>
+            <p>Autenticación por rol y reportes en tiempo real para cada sede.</p>
+          </article>
+          <article class="carousel-slide">
+            <span class="slide-tag">Control</span>
+            <h3>Geocercas inteligentes</h3>
+            <p>Permite marcar solo dentro del radio autorizado por el administrador.</p>
+          </article>
+          <article class="carousel-slide">
+            <span class="slide-tag">Confianza</span>
+            <h3>Biometría integrada</h3>
+            <p>Huella dactilar y registro del dispositivo para evitar suplantaciones.</p>
+          </article>
+          <article class="carousel-slide">
+            <span class="slide-tag">Gestión</span>
+            <h3>Visibilidad total</h3>
+            <p>Dashboard con entradas, salidas, horas trabajadas y alertas.</p>
+          </article>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" class="carousel-btn" data-direction="prev" aria-label="Anterior">
+            ‹
+          </button>
+          <div class="carousel-dots" aria-hidden="true">
+            <span class="dot is-active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button type="button" class="carousel-btn" data-direction="next" aria-label="Siguiente">
+            ›
+          </button>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="section" id="informacion">
+  <section class="section reveal" id="informacion">
     <div class="section-heading">
       <p class="eyebrow">Información</p>
       <h2>Un flujo simple para equipos modernos</h2>
@@ -93,7 +119,7 @@
     </div>
   </section>
 
-  <section class="section alt" id="servicio">
+  <section class="section alt reveal" id="servicio">
     <div class="section-heading">
       <p class="eyebrow">Detalle del servicio</p>
       <h2>Seguridad, cumplimiento y control operativo</h2>
@@ -126,7 +152,51 @@
     </div>
   </section>
 
-  <section class="section" id="contacto">
+  <section class="section reveal" id="precios">
+    <div class="section-heading">
+      <p class="eyebrow">Precios</p>
+      <h2>Planes pensados para cada equipo</h2>
+      <p>
+        Elige el plan que se adapte a tu operación. Todos incluyen geocercas, biometría y
+        reportes en tiempo real.
+      </p>
+    </div>
+    <div class="pricing-grid">
+      <article class="pricing-card">
+        <h3>Inicio</h3>
+        <p class="price">Desde $2 / colaborador</p>
+        <ul>
+          <li>Geocercas básicas</li>
+          <li>Registro de dispositivo</li>
+          <li>Reportes diarios</li>
+        </ul>
+        <a class="primary" href="#info">Solicitar información</a>
+      </article>
+      <article class="pricing-card featured">
+        <div class="badge">Recomendado</div>
+        <h3>Pro</h3>
+        <p class="price">Desde $4 / colaborador</p>
+        <ul>
+          <li>Biometría avanzada</li>
+          <li>Alertas y geocercas múltiples</li>
+          <li>Dashboard en tiempo real</li>
+        </ul>
+        <a class="primary" href="#info">Agendar demo</a>
+      </article>
+      <article class="pricing-card">
+        <h3>Enterprise</h3>
+        <p class="price">A medida</p>
+        <ul>
+          <li>Integraciones personalizadas</li>
+          <li>Soporte dedicado</li>
+          <li>Reportes y analítica avanzada</li>
+        </ul>
+        <a class="primary" href="#info">Hablar con ventas</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section reveal" id="contacto">
     <div class="section-heading">
       <p class="eyebrow">Contacto</p>
       <h2>¿Listo para transformar tu marcaje?</h2>
@@ -181,5 +251,6 @@
     </div>
     <p>© 2024 Herlie. Todos los derechos reservados.</p>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
