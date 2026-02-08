@@ -1,11 +1,12 @@
 :root {
   color-scheme: light;
-  --bg: #f7f8fb;
-  --primary: #2f5cf6;
-  --secondary: #101828;
-  --muted: #667085;
+  --bg: #f3f4f6;
+  --primary: #1e3a8a;
+  --primary-active: #3b82f6;
+  --secondary: #111827;
+  --muted: #374151;
   --card: #ffffff;
-  --accent: #e7ecff;
+  --accent: #e0e7ff;
 }
 
 * {
@@ -52,13 +53,14 @@ a {
 
 .nav .cta {
   padding: 10px 16px;
-  background: var(--secondary);
+  background: var(--primary);
   color: #fff;
   border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(30, 58, 138, 0.2);
 }
 
 .hero {
-  background: linear-gradient(120deg, #ffffff 10%, #eef2ff 85%);
+  background: radial-gradient(circle at top left, #e0e7ff 0%, #ffffff 45%, #eff6ff 100%);
   padding-bottom: 80px;
   overflow: hidden;
 }
@@ -114,7 +116,7 @@ a {
 }
 
 .secondary {
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary-active);
   color: var(--primary);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -122,7 +124,7 @@ a {
 .primary:hover,
 .secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(47, 92, 246, 0.2);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.25);
 }
 
 .hero-highlights {
@@ -134,7 +136,7 @@ a {
   background: var(--card);
   padding: 12px 16px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.08);
 }
 
 .hero-highlights strong {
@@ -151,10 +153,11 @@ a {
   background: var(--card);
   padding: 28px 24px 24px;
   border-radius: 24px;
-  box-shadow: 0 24px 60px rgba(16, 24, 40, 0.08);
+  box-shadow: 0 24px 60px rgba(30, 58, 138, 0.12);
   display: grid;
   gap: 20px;
   min-height: 320px;
+  border: 1px solid rgba(59, 130, 246, 0.15);
 }
 
 .carousel-track {
@@ -203,7 +206,7 @@ a {
 
 .carousel-btn {
   border: none;
-  background: var(--secondary);
+  background: var(--primary);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -230,7 +233,7 @@ a {
 }
 
 .dot.is-active {
-  background: var(--primary);
+  background: var(--primary-active);
   width: 22px;
 }
 
@@ -239,7 +242,7 @@ a {
 }
 
 .section.alt {
-  background: #f1f4ff;
+  background: #eef2ff;
 }
 
 .section-heading {
@@ -268,7 +271,8 @@ a {
   background: var(--card);
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 16px 40px rgba(16, 24, 40, 0.08);
+  box-shadow: 0 16px 40px rgba(30, 58, 138, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.12);
 }
 
 .service-card h3 {
@@ -296,7 +300,7 @@ a {
   background: var(--card);
   padding: 24px;
   border-radius: 20px;
-  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08);
+  box-shadow: 0 18px 40px rgba(30, 58, 138, 0.1);
   display: grid;
   gap: 16px;
 }
@@ -319,9 +323,9 @@ a {
 }
 
 .pricing-card.featured {
-  border: 2px solid var(--primary);
+  border: 2px solid var(--primary-active);
   position: relative;
-  background: #f7f9ff;
+  background: #eef4ff;
   transform: translateY(-6px);
 }
 
@@ -329,7 +333,7 @@ a {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: var(--primary);
+  background: var(--primary-active);
   color: #fff;
   padding: 6px 10px;
   border-radius: 999px;
@@ -354,6 +358,7 @@ a {
   background: var(--accent);
   padding: 16px;
   border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .contact-form {
@@ -362,7 +367,7 @@ a {
   border-radius: 18px;
   display: grid;
   gap: 16px;
-  box-shadow: 0 16px 40px rgba(16, 24, 40, 0.08);
+  box-shadow: 0 16px 40px rgba(30, 58, 138, 0.1);
 }
 
 .contact-form label {
@@ -382,7 +387,7 @@ a {
 
 .contact-form button {
   border: none;
-  background: var(--secondary);
+  background: var(--primary);
   color: #fff;
   padding: 12px 18px;
   border-radius: 12px;
