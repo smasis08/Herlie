@@ -1,12 +1,13 @@
 :root {
   color-scheme: light;
-  --bg: #f3f4f6;
+  --bg: #ffffff;
   --primary: #1e3a8a;
   --primary-active: #3b82f6;
   --secondary: #111827;
   --muted: #374151;
   --card: #ffffff;
   --accent: #e0e7ff;
+  --line: #e5e7eb;
 }
 
 * {
@@ -31,7 +32,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 8vw;
+  padding: 32px 8vw 24px;
+  border-bottom: 1px solid var(--line);
+  background: #ffffff;
 }
 
 .nav ul {
@@ -55,20 +58,20 @@ a {
   padding: 10px 16px;
   background: var(--primary);
   color: #fff;
-  border-radius: 999px;
-  box-shadow: 0 10px 24px rgba(30, 58, 138, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 12px 20px rgba(30, 58, 138, 0.18);
 }
 
 .hero {
-  background: radial-gradient(circle at top left, #e0e7ff 0%, #ffffff 45%, #eff6ff 100%);
-  padding-bottom: 80px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  padding: 80px 0 100px;
   overflow: hidden;
 }
 
 .hero-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  gap: 56px;
   padding: 0 8vw;
   align-items: center;
 }
@@ -91,7 +94,7 @@ a {
 .lead {
   color: var(--muted);
   max-width: 520px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .hero-actions {
@@ -104,7 +107,7 @@ a {
 .primary,
 .secondary {
   padding: 12px 20px;
-  border-radius: 999px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -135,8 +138,9 @@ a {
 .hero-highlights div {
   background: var(--card);
   padding: 12px 16px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--line);
 }
 
 .hero-highlights strong {
@@ -152,12 +156,12 @@ a {
 .hero-carousel {
   background: var(--card);
   padding: 28px 24px 24px;
-  border-radius: 24px;
-  box-shadow: 0 24px 60px rgba(30, 58, 138, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.12);
   display: grid;
   gap: 20px;
   min-height: 320px;
-  border: 1px solid rgba(59, 130, 246, 0.15);
+  border: 1px solid var(--line);
 }
 
 .carousel-track {
@@ -189,7 +193,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: var(--accent);
+  background: #eff6ff;
   color: var(--primary);
   font-weight: 600;
   padding: 6px 12px;
@@ -210,7 +214,7 @@ a {
   color: #fff;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 10px;
   font-size: 1.4rem;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -238,11 +242,11 @@ a {
 }
 
 .section {
-  padding: 80px 8vw;
+  padding: 96px 8vw;
 }
 
 .section.alt {
-  background: #eef2ff;
+  background: #f8fafc;
 }
 
 .section-heading {
@@ -270,9 +274,9 @@ a {
 .service-card {
   background: var(--card);
   padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 16px 40px rgba(30, 58, 138, 0.08);
-  border: 1px solid rgba(59, 130, 246, 0.12);
+  border-radius: 14px;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+  border: 1px solid var(--line);
 }
 
 .service-card h3 {
@@ -299,8 +303,8 @@ a {
 .pricing-card {
   background: var(--card);
   padding: 24px;
-  border-radius: 20px;
-  box-shadow: 0 18px 40px rgba(30, 58, 138, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
   display: grid;
   gap: 16px;
 }
@@ -325,7 +329,7 @@ a {
 .pricing-card.featured {
   border: 2px solid var(--primary-active);
   position: relative;
-  background: #eef4ff;
+  background: #eff6ff;
   transform: translateY(-6px);
 }
 
@@ -355,19 +359,19 @@ a {
 }
 
 .contact-list div {
-  background: var(--accent);
+  background: #eff6ff;
   padding: 16px;
   border-radius: 12px;
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  border: 1px solid var(--line);
 }
 
 .contact-form {
   background: var(--card);
   padding: 24px;
-  border-radius: 18px;
+  border-radius: 16px;
   display: grid;
   gap: 16px;
-  box-shadow: 0 16px 40px rgba(30, 58, 138, 0.1);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
 }
 
 .contact-form label {
@@ -379,8 +383,8 @@ a {
 
 .contact-form input,
 .contact-form textarea {
-  border: 1px solid #d0d5dd;
-  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
   padding: 10px 12px;
   font-size: 0.95rem;
 }
@@ -390,7 +394,7 @@ a {
   background: var(--primary);
   color: #fff;
   padding: 12px 18px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -412,6 +416,8 @@ a {
   justify-content: space-between;
   gap: 16px;
   color: var(--muted);
+  border-top: 1px solid var(--line);
+  background: #ffffff;
 }
 
 
