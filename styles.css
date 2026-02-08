@@ -200,56 +200,6 @@ a {
   margin-bottom: 8px;
 }
 
-.pricing-grid {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.pricing-card {
-  background: var(--card);
-  padding: 24px;
-  border-radius: 20px;
-  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.08);
-  display: grid;
-  gap: 16px;
-}
-
-.pricing-card .price {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--secondary);
-}
-
-.pricing-card ul {
-  list-style: none;
-  display: grid;
-  gap: 8px;
-  color: var(--muted);
-}
-
-.pricing-card .primary {
-  text-align: center;
-}
-
-.pricing-card.featured {
-  border: 2px solid var(--primary);
-  position: relative;
-  background: #f7f9ff;
-}
-
-.pricing-card .badge {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background: var(--primary);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-
 .contact-grid {
   display: grid;
   gap: 40px;
